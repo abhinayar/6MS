@@ -1,0 +1,500 @@
+* {
+    margin: 0 0 0;
+    padding: 0 0 0;
+}
+
+@font-face {
+    font-family: 'Aldi';
+    src: url('fonts/aldi.eot'); /* IE9 Compat Modes */
+    src: url('fonts/aldi.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/aldi.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/aldi.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/aldi.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/aldi.svg#aldi') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Aldi';
+    src: url('fonts/aldi-bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/aldi-bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/aldi-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/aldi-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/aldi-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/aldi-bold.svg#aldi') format('svg'); /* Legacy iOS */ 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('fonts/simplifica.eot'); /* IE9 Compat Modes */
+    src: url('fonts/simplifica.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/simplifica.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/simplifica.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/simplifica.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/simplifica.svg#aldi') format('svg'); /* Legacy iOS */ 
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Aldi, Helvetica, Arial;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, p, a, li, ul {
+    font-family: Aldi, Helvetica, Arial !important;
+}
+
+#background {
+    overflow: hidden;
+}
+
+#first-column {
+    height: 100vh;
+    width: 20%;
+    min-width: 260px;
+    float: left;
+}
+
+#logo-image {
+    height: 200px;
+    margin-top: 40px;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+    -webkit-perspective: 1000;
+}
+
+#logo-image > img {
+    display: block;
+    height: 100%;
+    margin-right:auto;
+    margin-left:auto
+}
+
+#logo-image:hover {
+    height: 210px;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+    -webkit-perspective: 1000;
+}
+
+#nav {
+    font-family: Aldi, Helvetica, Arial;
+    margin-top: 30px;
+    font-size: 0; /*to fix text-center issue*/
+}
+
+.nav-links {
+    display: block;
+    font-size: 15px;
+    font-family: Aldi, Helvetica, Arial;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0px;
+}
+
+.nav-links > a {
+    color: #467bb5;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    color: #a82f34;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+
+.nav-links > a.active {
+    color: #a82f34;
+    text-decoration: none;
+}
+
+#social {
+    height: 140px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-img-wrapper {
+    font-family: Aldi, Helvetica, Arial;
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 110px;
+    margin: 3% 3%;
+}
+
+.social-img {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10%;
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+
+.social-img:hover {
+    opacity: 0.8;
+    width: 110px;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+
+#copyright {
+    height: 50px;
+    margin-top: 20px;
+    padding-top: 0;
+    font-family: Aldi, Helvetica, Arial;
+    font-family: Aldi, Helvetica, Arial;
+}
+
+#copyright > p {
+    margin: 5px 20px;
+    font-size: 10px;
+}
+
+#second-column {
+    height: 100vh;
+    overflow: hidden;
+    background: #ccc;
+    background-color: #fff;
+}
+
+#page-content {
+    height: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+#home {
+    height: inherit;
+    overflow: hidden;
+}
+
+#home > img {
+    height: 100%;
+    width: 100%;
+    min-width: 1100px;
+    min-height: 800px;
+}
+
+
+
+
+/*************************
+********* Contact Us CSS ******
+**************************/
+
+
+#contact-us {
+    padding-top: 3%;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    background-image: url(images/background.jpg);
+    background-size: auto;
+    background-color: #a82f34;
+    font-family: Aldi, Helvetica, Arial;
+    display: none;
+    color: #fff;
+    min-width: 800px;
+    overflow: hidden;
+}
+
+#contact-us .contact-form 
+.form-group label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-group .form-control {
+  padding: 7px 12px;
+  border-color:#aaaaaa;
+  box-shadow: none;
+}
+
+textarea#message{
+  resize: none;
+  padding: 10px;
+}
+
+#contact-us .contact-wrap {
+  margin-top: 20px;
+}
+
+.contact-wrap {
+    margin: 0 auto;
+}
+
+#contact-form {
+    width: 600px;
+    min-width: 600px;
+    padding-top: 3%;
+}
+
+#form-wrapper {
+    width: 600px;   
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    min-width: 600px;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#submit-button {
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+
+#submit-button:hover {
+    font-size: 25px;
+    padding: 10px 30px;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+
+p.media-enquiries {
+    font-size: 10px;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: rgba(255,255,255,0.5);
+    transition: 0.5s;
+    text-align: center;
+}
+
+p.media-enquiries:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.25s;
+}
+
+.heading {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+/***** ABOUT US *****/
+
+#about-us {
+    background-image: url(images/about-us/background.jpg);
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    min-height: 700px;
+    min-width: 1100px;
+    margin: 0 0 0;
+    padding: 0 0 0;
+    overflow: hidden;
+}
+
+#about-wrapper {
+    position: relative;
+    width: 800px;
+    min-width: 800px;
+    height: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#about-text {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.about-heading {
+    text-align: center;
+    padding-top: 10px;
+    position: static;
+    font-size: 50px;
+    min-width: 800px;
+}
+
+.large-text {
+    font-size: 18px;
+}
+
+.largest-text {
+    font-size: 24px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.smallest-text {
+    font-size: 10px;
+}
+
+#widgetmain > img {
+    width: 100px;
+}
+    
+
+/**** FIND YOUR SOLITUDE ***/
+#tumblr-wrapper {
+    background-image: url(images/find-your-solitude/FYSbg.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: inherit;
+    height: 100vh;
+    min-height: 700px;
+    min-width: 1100px;
+    margin: 0 0 0;
+    padding: 0 0 0;
+    overflow: hidden;
+}
+
+#frame-container {
+    padding-top: 10%;
+    width: 800px;
+    height: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+#tumblr-frame {
+    min-width: 800px;
+    min-height: 600px;
+    width: 800px;
+    height: 600px;
+    border: 0;
+}
+
+/*** 30 DAY CHALLENGE ***/
+#challenge-wrapper {
+    background-image: url(images/30-day-challenge/30daybg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: inherit;
+    height: 100vh;
+    min-height: 700px;
+    min-width: 1100px;
+    margin: 0 0 0;
+    padding: 0 0 0;
+    overflow: hidden;
+}
+
+#challenge-textbox {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    width: 800px;
+    min-width: 800px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto; 
+    top: 25px;
+    overflow: hidden;
+}
+
+.challenge-heading {
+    text-align: center;
+    padding-top: 15px;
+    position: static;
+    font-size: 50px;
+    min-width: 800px;
+}
+
+.challenge-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.challenge-text.first {
+    padding: 50px 100px;
+}
+
+.challenge-text.second {
+    padding: 0 100px;
+    font-size: 10px;
+}
+
+#horiz-logo {
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#horiz-logo > img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+
+/*** THE COMP ***/
+
+#the-competition {
+    background-image: url(images/the-competition/the-competition-bg.jpeg);
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    min-height: 700px;
+    min-width: 1100px;
+    margin: 0 0 0;
+    padding: 0 0 0;
+    overflow: hidden;
+}
+
+#competition-wrapper {
+    position: relative;
+    width: 800px;
+    min-width: 800px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#competition-text {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.competition-heading {
+    text-align: center;
+    padding-top: 10px;
+    position: static;
+    font-size: 50px;
+    min-width: 800px;
+    padding-bottom: 10px;
+}
+
+.comp-welcome {
+    padding-top: 100px;
+}
